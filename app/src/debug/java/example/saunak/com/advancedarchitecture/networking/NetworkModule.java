@@ -20,6 +20,6 @@ public abstract class NetworkModule {
     @Provides
     @Named("base_url")
     static String provideBaseUrl(){
-        return "http://api.github.com";
+        return "https://api.github.com";
     }
 }

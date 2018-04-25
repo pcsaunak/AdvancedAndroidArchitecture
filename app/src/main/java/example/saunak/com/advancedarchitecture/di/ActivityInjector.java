@@ -43,6 +43,7 @@ public class ActivityInjector {
         AndroidInjector.Factory<Activity> injectorFactory =
                 (AndroidInjector.Factory<Activity>) activityInjectors.get(activity.getClass()).get();
         AndroidInjector<Activity> injector = injectorFactory.create(activity);
+        injector.inject(activity);
         cache.put(instanceId,injector);
     }
 

@@ -19,7 +19,7 @@ public abstract class BaseController extends Controller {
 
     private boolean injected = false;
     private Unbinder unbinder;
-    private CompositeDisposable disposables;
+    private CompositeDisposable disposables = new CompositeDisposable();
 
     @Override
     protected void onContextAvailable(@NonNull Context context) {

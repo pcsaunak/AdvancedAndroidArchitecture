@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Advanced Architecture</string>
+    <string name="api_error_repos">Error Loading Repos</string>
+</resources>
